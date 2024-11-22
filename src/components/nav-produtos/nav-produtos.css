@@ -1,0 +1,5 @@
+.navprodutos {
+  display: flex;
+  padding: 1rem;
+  justify-content: space-around;
+}

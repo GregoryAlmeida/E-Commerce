@@ -1,0 +1,15 @@
+.main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+}
+
+div {
+  padding: 1rem;
+}
+
+h1 {
+  text-align: center;
+}
