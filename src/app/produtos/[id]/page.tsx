@@ -19,7 +19,7 @@ export default function ProdutoPage({params}: PageParams) {
   const {id}: {id: string} = use(params)
   
   const API_GET = async() => {
-    const response = await fetch(`http://localhost:3000/backend/${id}`)
+    const response = await fetch(`https://e-commerce-gregory.netlify.app/backend/${id}`)
     setData(await response.json())
   }
 
