@@ -5,9 +5,7 @@ import { Suspense, Usable, use, useEffect, useState } from "react";
 import Loading from "./loading";
 
 type PageParams = {
-  params: Usable<{ id: string; }> &{
-    id: string;
-  }
+  params: Promise<{id: string }> & Usable<{id: string}>;
 }
 
 type IData = {
