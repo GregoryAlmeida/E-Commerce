@@ -1,6 +1,8 @@
 'use client'
+import "@/app/produtos/[id]/produtos.css"
 import NavProdutos from "@/components/nav-produtos/nav-produtos";
 import { Suspense, use, useEffect, useState } from "react";
+import Loading from "./loading";
 
 type PageParams = {
   params: {
@@ -35,7 +37,7 @@ export default function ProdutoPage({params}: PageParams) {
       <NavProdutos />
       <h1 style={{textTransform: 'uppercase'}}>{id}</h1>
 
-      <Suspense fallback={"Carregando..."}>
+      <Suspense fallback={<Loading />}>
         {data.map(({id, nome, preco}) => (
          <div key={id} >
             <h2>{nome}</h2>
