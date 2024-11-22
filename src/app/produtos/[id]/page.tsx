@@ -1,11 +1,11 @@
 'use client'
 import "@/app/produtos/[id]/produtos.css"
 import NavProdutos from "@/components/nav-produtos/nav-produtos";
-import { Suspense, use, useEffect, useState } from "react";
+import { Suspense, Usable, use, useEffect, useState } from "react";
 import Loading from "./loading";
 
 type PageParams = {
-  params: {
+  params: Usable<{ id: string; }> &{
     id: string;
   }
 }
