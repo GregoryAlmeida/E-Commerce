@@ -17,7 +17,7 @@ import '@splidejs/splide/dist/css/themes/splide-skyblue.min.css';
 export default function Home() {
   return (
     <main className='main'>
-      <section>
+      <section className="section-main">
         <div>
           <Link href="/produtos/hardware">
             <h1>Hardware</h1>
@@ -43,7 +43,7 @@ export default function Home() {
           </Link>
         </div>
       </section>
-      <section>
+      <section className="section-main">
         <div>
           <Link href="/produtos/computadores">
             <h1>Computadores</h1>

@@ -50,6 +50,16 @@ h1 {
 }
 
 @media(max-width: 50rem) {
+  .main .section-main div img {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .section-ofertas img {
+    width: 10rem;
+    height: 10rem;
+  }
+
   .splide img {
     width: 100%;
   }
