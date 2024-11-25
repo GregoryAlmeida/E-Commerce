@@ -15,8 +15,8 @@ type IData = {
 }
 
 export default function ProdutoPage({params}: PageParams) {
-  //const API = 'https://e-commerce-gregory.netlify.app/'
-  const API = 'http://localhost:3000/'
+  const API = 'https://e-commerce-gregory.netlify.app/'
+  //const API = 'http://localhost:3000/'
   const [data, setData] = useState<IData[]>([])
   const {id}: {id: string} = use(params)
   
