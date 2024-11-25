@@ -6,7 +6,7 @@ import AUDIO from '@/app/fonts/img/audio.jpg'
 import SLIDE1 from '@/app/fonts/img/slide1.webp'
 import SLIDE2 from '@/app/fonts/img/slide2.avif'
 import SLIDE3 from '@/app/fonts/img/slide3.webp'
-import SLIDE4 from '@/app/fonts/img/slide4.webp'
+import SLIDE4 from '@/app/fonts/img/slide4.jpg'
 import OFERTA1 from '@/app/fonts/img/memoriaramoferta.png'
 import OFERTA2 from '@/app/fonts/img/processadoroferta.webp'
 import Image from "next/image";
