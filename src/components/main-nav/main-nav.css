@@ -2,4 +2,40 @@
   padding: 1rem;
   display: flex;
   justify-content: space-around;
+  font-size: 1.5rem;
+  background-color: #353b48;
+  color: white;
+}
+
+
+.home:hover {
+  text-decoration: underline #9c88ff;
+
+  svg {
+    path {
+      fill: #9c88ff;
+    }
+   
+  }
+}
+
+.login:hover {
+  text-decoration: underline #00a8ff;
+
+  svg {
+    path {
+      fill: #00a8ff;
+    }
+   
+  }
+}
+
+.carrinho:hover {
+  text-decoration: underline #4cd137;
+  svg {
+    path {
+      fill: #4cd137;
+    }
+   
+  }
 }

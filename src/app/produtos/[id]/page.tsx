@@ -15,11 +15,13 @@ type IData = {
 }
 
 export default function ProdutoPage({params}: PageParams) {
+  //const API = 'https://e-commerce-gregory.netlify.app/'
+  const API = 'http://localhost:3000/'
   const [data, setData] = useState<IData[]>([])
   const {id}: {id: string} = use(params)
   
   const API_GET = async() => {
-    const response = await fetch(`https://e-commerce-gregory.netlify.app/backend/${id}`)
+    const response = await fetch(`${API}backend/${id}`)
     setData(await response.json())
   }
 
