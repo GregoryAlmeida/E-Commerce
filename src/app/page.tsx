@@ -4,7 +4,7 @@ import PERIFERICOS from "@/app/fonts/img/perifericos.jpg"
 import COMPUTADORES from '@/app/fonts/img/computadores.webp'
 import AUDIO from '@/app/fonts/img/audio.jpg'
 import '@/app/home.css'
-import { Splide, SplideSlide } from '@splidejs/react-splide';
+import { Splide } from '@splidejs/splide';
 import '@splidejs/splide/dist/css/themes/splide-skyblue.min.css';
 import Image from "next/image";
 import Link from 'next/link'
@@ -64,20 +64,7 @@ export default function Home() {
         </div>
       </section>
       <section>
-    <Splide className='splide'>
-      <SplideSlide className='slide1'>
-        <Image src={AUDIO} alt=""/>
-      </SplideSlide>
-      <SplideSlide>
-        <Image src={HARDWARE} alt="Hardware" />
-      </SplideSlide>
-      <SplideSlide>
-        <Image src={COMPUTADORES} alt="Computadore" />
-      </SplideSlide>
-      <SplideSlide>
-        <Image src={PERIFERICOS} alt="Perifericos" />
-      </SplideSlide>
-    </Splide>
+      
       </section>
     </main>
   );
