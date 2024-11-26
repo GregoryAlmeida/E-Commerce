@@ -4,8 +4,9 @@
   aspect-ratio: 1;
   border-radius: 50%;
   border: 8px solid;
-  border-color: #000 #0000;
+  border-color: #fff #718093;
   animation: l1 1s infinite;
+  align-items: center;
   margin: auto;
 }
 @keyframes l1 {to{transform: rotate(.5turn)}}
@@ -14,9 +15,68 @@ main {
   display: flex;
   flex-direction: column;
   padding: 1rem;
+  gap: 1rem;
 }
 
-div {
-  margin: auto;
+
+h1 {
+  background-color: var(--background-second);
   padding: 1rem;
+  width: 100%;
+  text-align: center;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5rem;
+}
+
+.div-produto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  color: white;
+  background-color: var(--background-second);
+  border-radius: 10px;
+  max-width: 15rem;
+}
+
+.img-produto {
+  padding: 0;
+  box-shadow: none;
+  width: 100%;
+}
+
+.img-produto:hover {
+  box-shadow: none;
+}
+
+p {
+  word-break:keep-all;
+  padding: .5rem;
+  text-align: center;
+}
+
+h2 {
+  color: gold;
+}
+
+button {
+  width: 100%;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: #44bd32;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border: none;
+  color: white;
+  padding: .5rem;
+}
+
+button:hover {
+  box-shadow: 0 0 15px #4cd137;
 }

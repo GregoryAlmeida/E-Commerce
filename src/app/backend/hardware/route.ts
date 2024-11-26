@@ -1,14 +1,49 @@
+import HARDWARE1 from '@/app/backend/hardware/img/hardware1.jpg'
+
 export async function GET() {
   return Response.json([
     {
       id: crypto.randomUUID(),
-      nome: 'Placa de video',
-      preco: 2500,
+      nome: 'Placa de Video RTX 4060',
+      preco: 2159,
+      quantidade: 56,
+      img: HARDWARE1,
     },
     {
       id: crypto.randomUUID(),
-      nome: 'Placa mãe',
-      preco: 500,
-    }
+      nome: 'Placa de Video RTX 4060',
+      preco: 2159,
+      quantidade: 56,
+      img: HARDWARE1,
+    },
+    {
+      id: crypto.randomUUID(),
+      nome: 'Placa de Video RTX 4060',
+      preco: 2159,
+      quantidade: 56,
+      img: HARDWARE1,
+    },
+    {
+      id: crypto.randomUUID(),
+      nome: 'Placa de Video RTX 4060',
+      preco: 2159,
+      quantidade: 56,
+      img: HARDWARE1,
+    },
+    {
+      id: crypto.randomUUID(),
+      nome: 'Placa de Video RTX 4060',
+      preco: 2159,
+      quantidade: 56,
+      img: HARDWARE1,
+    },
+    {
+      id: crypto.randomUUID(),
+      nome: 'Placa de Video RTX 4060',
+      preco: 2159,
+      quantidade: 56,
+      img: HARDWARE1,
+    },
+    
   ])
 }

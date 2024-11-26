@@ -17,6 +17,9 @@ export default function RootLayout({
       <body>
         <Menu />
         {children}
+        <footer>
+          <h1>Todos os direitos reservados ©</h1>
+        </footer>
       </body>
     </html>
   );

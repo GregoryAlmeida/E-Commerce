@@ -1,14 +1,48 @@
+import AUDIO1 from '@/app/backend/audio/img/audio1.jpg'
+
 export async function GET() {
   return Response.json([
     {
       id: crypto.randomUUID(),
-      nome: 'Fone Stinger',
-      preco: 250,
+      nome: 'Fone Stinger HyperX',
+      preco: 240,
+      quantidade: 206,
+      img: AUDIO1,
     },
     {
       id: crypto.randomUUID(),
-      nome: 'Caixa de som JBL',
-      preco: 400,
+      nome: 'Fone Stinger HyperX',
+      preco: 240,
+      quantidade: 206,
+      img: AUDIO1,
+    },
+    {
+      id: crypto.randomUUID(),
+      nome: 'Fone Stinger HyperX',
+      preco: 240,
+      quantidade: 206,
+      img: AUDIO1,
+    },
+    {
+      id: crypto.randomUUID(),
+      nome: 'Fone Stinger HyperX',
+      preco: 240,
+      quantidade: 206,
+      img: AUDIO1,
+    },
+    {
+      id: crypto.randomUUID(),
+      nome: 'Fone Stinger HyperX',
+      preco: 240,
+      quantidade: 206,
+      img: AUDIO1,
+    },
+    {
+      id: crypto.randomUUID(),
+      nome: 'Fone Stinger HyperX',
+      preco: 240,
+      quantidade: 206,
+      img: AUDIO1,
     },
   ])
 }
