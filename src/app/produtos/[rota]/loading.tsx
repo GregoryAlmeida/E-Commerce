@@ -1,4 +1,4 @@
-import "@/app/produtos/[id]/produtos.css"
+import "@/app/produtos/[rota]/produtos.css"
 export default function Loading() {
   return <div className="loader" ></div>
 }

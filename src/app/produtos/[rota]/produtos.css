@@ -46,6 +46,11 @@ section {
   max-width: 15rem;
 }
 
+.div-btn {
+  gap: 0;
+  width: 100%;
+}
+
 .img-produto {
   padding: 0;
   box-shadow: none;

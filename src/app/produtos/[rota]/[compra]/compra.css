@@ -1,0 +1,37 @@
+.main-compra {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.main-compra div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: var(--background-second);
+  padding: 1rem;
+  border-radius: 5px;
+  gap: 1rem;
+}
+
+.main-compra div h1 {
+  font-size: 4rem;
+  color: gold;
+}
+
+.main-compra  button {
+  border-radius: 5px;
+  font-size: 3rem;
+}
+
+.main-compra img {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 5px;
+  box-shadow: none;
+}
+
+.main-compra img:hover {
+  box-shadow: none;
+}
+
