@@ -17,8 +17,8 @@ export type IData = {
   quantidade: number;
   img: StaticImageData;
 }
-export const API = 'http://localhost:3000/'
-//export const API = 'https://e-commerce-gregory.netlify.app/'
+//export const API = 'http://localhost:3000/'
+export const API = 'https://e-commerce-gregory.netlify.app/'
 export const currencyFormat = new Intl.NumberFormat(
   'pt-BR', {style: 'currency', currency: 'BRL'}
 )
