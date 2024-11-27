@@ -9,7 +9,6 @@
   flex-direction: column;
   justify-content: space-around;
   background-color: var(--background-second);
-  padding: 1rem;
   border-radius: 5px;
   gap: 1rem;
 }

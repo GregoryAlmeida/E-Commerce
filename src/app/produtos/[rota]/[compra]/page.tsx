@@ -1,19 +1,32 @@
 'use client'
 import { Usable, use, useEffect, useState } from "react";
-import { API, currencyFormat, IData } from "../page";
+import {IData } from "../page";
 import Image from "next/image";
 import Loading from "../loading";
 import '@/app/produtos/[rota]/[compra]/compra.css'
+import NavProdutos from "@/components/nav-produtos/nav-produtos";
 
 type PageParams = {
-  params: Promise<{rota: string, compra: number }> & Usable<{rota: string, compra: number}>;
+  params: Promise<{
+    rota: string, compra: number 
+  }> & 
+  Usable<{
+    rota: string, compra: number
+  }>;
 }
 export default function CompraPage({params} : PageParams) {
+  const API = 'http://localhost:3000/'
+  //const API = 'https://e-commerce-gregory.netlify.app/'
+
+  const currencyFormat = new Intl.NumberFormat(
+    'pt-BR', {style: 'currency', currency: 'BRL'}
+  )
+
   const [dataCompra, setDataCompra] = useState<IData | null>(null)
   const {rota, compra} = use(params)
 
   const GET_COMPRA = async () => {
-    const response = await fetch(API + 'backend/' + rota)
+    const response = await fetch(`${API}backend/${rota}`)
     const data = await response.json() as IData[]
     setDataCompra(data[compra])
   } 
@@ -24,6 +37,7 @@ export default function CompraPage({params} : PageParams) {
 
   return (
     <main className="main-compra">
+      <NavProdutos />
       {!dataCompra ? <Loading /> : (
         <>
           <h1>{dataCompra.nome}</h1>

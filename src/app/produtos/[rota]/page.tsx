@@ -17,19 +17,21 @@ export type IData = {
   quantidade: number;
   img: StaticImageData;
 }
-//export const API = 'http://localhost:3000/'
-export const API = 'https://e-commerce-gregory.netlify.app/'
-export const currencyFormat = new Intl.NumberFormat(
-  'pt-BR', {style: 'currency', currency: 'BRL'}
-)
 
 export default function ProdutoPage({params}: PageParams) {
+  const API = 'http://localhost:3000/'
+  //const API = 'https://e-commerce-gregory.netlify.app/'
+
+  const currencyFormat = new Intl.NumberFormat(
+    'pt-BR', {style: 'currency', currency: 'BRL'}
+  )
+
   const [data, setData] = useState<IData[]>([])
   const {rota} = use(params)
   
   const API_GET = async() => {
     const response = await fetch(`${API}backend/${rota}`)
-    setData(await response.json())
+    setData(await response.json() as IData[])
   }
 
   useEffect(() => {
