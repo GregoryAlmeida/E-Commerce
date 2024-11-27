@@ -19,8 +19,8 @@ export type IData = {
 }
 
 export default function ProdutoPage({params}: PageParams) {
-  const API = 'http://localhost:3000/'
-  //const API = 'https://e-commerce-gregory.netlify.app/'
+  //const API = 'http://localhost:3000/'
+  const API = 'https://e-commerce-gregory.netlify.app/'
 
   const currencyFormat = new Intl.NumberFormat(
     'pt-BR', {style: 'currency', currency: 'BRL'}
