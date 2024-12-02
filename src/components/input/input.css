@@ -1,0 +1,7 @@
+.input-div {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  gap: .5rem;
+  padding: 1rem;
+}

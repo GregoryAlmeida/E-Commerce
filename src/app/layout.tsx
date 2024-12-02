@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description: "Home da página de E-commerce!",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
@@ -15,11 +15,11 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body>
-        <Menu />
-        {children}
-        <footer>
-          <h1>Todos os direitos reservados ©</h1>
-        </footer>
+          <Menu />
+          {children}
+          <footer>
+            <h1>Todos os direitos reservados ©</h1>
+          </footer>
       </body>
     </html>
   );

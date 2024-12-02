@@ -44,7 +44,6 @@ export default function CompraPage({params} : PageParams) {
               <h1>{currencyFormat.format(dataCompra.preco)}</h1>
               <p>{dataCompra.quantidade} em estoque</p>
               <button onClick={() => redirect('/carrinho')}>Comprar</button>
-              <button style={{backgroundColor: 'gold'}}>Carrinho</button>
             </div>
           </section>
         </>

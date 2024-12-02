@@ -8,7 +8,7 @@ import { redirect } from "next/navigation";
 import GET_API, { API, IData } from "@/app/api/api";
 
 type PageParams = {
-  params: Promise<{rota: string }> & Usable<{rota: string}>;
+  params: Promise<{rota: string}> & Usable<{rota: string}>;
 }
 
 export default function ProdutoPage({params}: PageParams) {
@@ -19,10 +19,11 @@ export default function ProdutoPage({params}: PageParams) {
 
   const [data, setData] = useState<IData[]>([])
   const {rota} = use(params)
-  
+
   const handleData = async () => {
     setData(await GET_API(rota))
   }
+
 
   useEffect(() => {
     if (rota) {
@@ -55,7 +56,6 @@ export default function ProdutoPage({params}: PageParams) {
             </div>
           ))}
       </section>
-
     </main>
   )
 }
