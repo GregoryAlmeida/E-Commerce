@@ -1,5 +1,5 @@
 ## Página E-commerce
-Página consta com Home, Login e Carrinho.
+Página conta com Home, Login e Carrinho.
 
 ## Home
 Nesta página encontramos categorias de produtos que redirecionam para suas respectivas páginas com seus produtos.
