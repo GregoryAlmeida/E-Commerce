@@ -11,6 +11,23 @@
   gap: 5rem;
 }
 
+.main .section-main {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  background-color: var(--background);
+
+}
+
+.main .section-main div {
+  background-color: var(--background);
+}
+
+.main .section-main h1 {
+  background-color: var(--background);
+
+}
+
 section {
   display: flex;
   justify-content: space-around;

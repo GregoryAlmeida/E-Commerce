@@ -2,6 +2,7 @@
   display: flex;
   padding: 1rem;
   justify-content: space-around;
+  width: 100%;
 }
 
 .navprodutos a {
