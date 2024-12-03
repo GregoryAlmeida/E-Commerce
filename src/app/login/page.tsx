@@ -8,6 +8,8 @@ export default function LoginPage() {
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault()
 
+    alert('Em breve...')
+
   }
 
   return (
